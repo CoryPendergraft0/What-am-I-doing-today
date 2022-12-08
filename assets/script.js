@@ -1,7 +1,7 @@
 var currDate = $('#currentDay');
         currDate.text(new Date());
 
-var saveBtn = $(".saveBtn")
+  var saveBtn = $(".saveBtn")
 
 
 $(function timeColor() {
@@ -11,11 +11,11 @@ $(function timeColor() {
         var currHour = parseInt($(this).parent().attr("id").replace("hour-", ""));
         
         if (currHour < currentHour) {
-            $(this).addClass("future");
+            $(this).addClass("past");
         } else if (currHour === currentHour) {
             $(this).addClass("present");
         } else {
-            $(this).addClass("past");
+            $(this).addClass("future");
         }
     })
 });
