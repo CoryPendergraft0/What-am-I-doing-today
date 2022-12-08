@@ -20,4 +20,7 @@ $(function timeColor() {
     })
 });
 
-
+$(saveBtn).click(function() {
+  var textInput = $(this).siblings(".description").val();time = $(this).parent().attr("id").split("-")[1];
+  localStorage.setItem(textInput, time);
+})
