@@ -1,30 +1,24 @@
 var currDate = $('#currentDay');
         currDate.text(new Date());
 
-  
+var saveBtn = $(".saveBtn")
 
 
-$(function timeBlockColor() {
-  var saveBtn = $(".saveBtn")
+$(function timeColor() {
   var currentHour = dayjs().hour();
 
     $(".description").each(function() {
-        var currHour = parseInt($(this).attr("id"));
-
-        // console.log(this); //each time-block
-
-        if (currHour > hour) {
+        var currHour = parseInt($(this).parent().attr("id").replace("hour-", ""));
+        
+        if (currHour < currentHour) {
             $(this).addClass("future");
-        } else if (currHour === hour) {
+        } else if (currHour === currentHour) {
             $(this).addClass("present");
         } else {
             $(this).addClass("past");
         }
     })
-};
-
-
-timeBlockColor()
+});
 
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
