@@ -1,7 +1,7 @@
 # What am i doing today?!!
 
 ## Project link
-[here is a link to the deployed page]()
+[here is a link to the deployed page](https://corypendergraft0.github.io/What-am-I-doing-today/)
 
 ## Table of contents
 - [Description](#description)
