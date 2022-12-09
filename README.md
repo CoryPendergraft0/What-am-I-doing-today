@@ -8,16 +8,8 @@
 
 - [Visuals](#visuals)
 
-
-
-
 ## Description
 This weeks homework was to complete a "What am i doing today" planner, or day scheduler, and have it display the correct time, save user input to user storage, and even have that saved content onto the page after its refreshed. Working with JQuery was a challenge but i managed toi navigate my way thru it. Hope you enjoy!
-
-
-
-
-
 
 
 
