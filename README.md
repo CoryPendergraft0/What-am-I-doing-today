@@ -22,7 +22,7 @@ This weeks homework was to complete a "What am i doing today" planner, or day sc
 
 
 ## Visuals
-![here is a picture of the deployed application]();
+![here is a picture of the deployed application](./assets/images/Application.png);
 
-![here is a picture of the application looking into local storage]();
+![here is a picture of the application looking into local storage](./assets/images/Look%20into%20local%20storage.png);
 
