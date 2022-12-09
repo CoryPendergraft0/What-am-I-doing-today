@@ -8,7 +8,7 @@ $(function timeColor() {
   var currentHour = dayjs().hour();
 
     $(".description").each(function() {
-        var currHour = parseInt($(this).parent().attr("id"));
+        var currHour = parseInt($(this).parent().attr("id").replace("hour-", ""));
         
         if (currHour < currentHour) {
             $(this).addClass("past");
