@@ -13,23 +13,22 @@ $(function planner() {
     var time = $(this).parent().attr("id").split("-")[1];
     
     localStorage.setItem(time, textInput);
-  
+    
   })
   
   
   $(".description").each(function() {
-    var currHour = parseInt($(this).parent().attr("id").replace("hour-", ""));
+    var currHour = $(this).parent().attr("id").replace("hour-", "");
     
-    if (currHour < currentHour) {
+    if (parseInt(currHour) < currentHour) {
       $(this).addClass("past");
-    } else if (currHour === currentHour) {
+    } else if (parseInt(currHour) === currentHour) {
       $(this).addClass("present");
     } else {
       $(this).addClass("future");
     }
-   
     //this gets my saved items back onto the page after i refresh it
-    var text = localStorage.getItem($(this).parent().attr("id"));
+    var text = localStorage.getItem(currHour);
     $(this).val(text);
   }
   );
